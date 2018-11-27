@@ -45,8 +45,12 @@ print ("Estimated frames per second : {0}".format(fpsCamera))
 """
 
 # define range of skin color in HSV
-lower_thresh = np.array([0, 50, 0])
-upper_thresh = np.array([120, 150, 255])
+#lower_thresh = np.array([0, 50, 0])
+#upper_thresh = np.array([120, 150, 255])
+
+# define range of skin color in HSV
+lower_thresh = np.array([0, 48, 80], dtype = "uint8")
+upper_thresh = np.array([20, 255, 255], dtype = "uint8")
 
 # Create empty points array for trajectories tracking 
 points_left = []
