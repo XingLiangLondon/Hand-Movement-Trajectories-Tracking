@@ -8,4 +8,4 @@
    - Secondly sorting contours by position (get hands from left to right )
    - Draw Convex Hull contour and normal contour
 6. Tracking hand movement trajectories based on contour mass centroid 
-7. Face detection is also performed using HAAR CASCADE
+7. Face detection is also performed using HAAR CASCADE Classifiers
