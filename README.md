@@ -1,4 +1,4 @@
-# Hands Movement Trajectories Tracking
+# Hand Movement Trajectories Tracking
 1. Convert video frame from RBG/BGR to HSV 
 2. Apply skin detection by lower & upper thresh of skin color filtering
 3. Apply morphology effects to denoise
