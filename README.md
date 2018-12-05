@@ -9,3 +9,7 @@
    - Draw Convex Hull contour and normal contour
 6. Tracking hand movement trajectories based on contour mass centroid 
 7. Face detection is also performed using HAAR CASCADE Classifiers
+
+
+
+V1: is hand movement trajectories tracking based on countour mass centriods with X-Y trajectorires plot
