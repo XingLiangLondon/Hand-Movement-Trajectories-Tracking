@@ -63,7 +63,7 @@ def plot_trajectories(center,str, clr):
     plt.plot(xs, ys, color= clr)
     plt.xlabel('X')
     plt.ylabel('Y')
-    plt.title(str + 'hand trajectories')
+    plt.title(str + ' hand trajectories')
     plt.gca().invert_yaxis()  #Reverse Y-Axis in PyPlot (opencv choose the coordinate system of points/images from Top-Left corner)
     plt.gca().invert_xaxis()  #Reverse X-Axis in PyPlot (Make trajectories like a Mirror View)
     plt.show()
