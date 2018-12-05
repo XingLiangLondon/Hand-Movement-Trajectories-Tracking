@@ -12,4 +12,4 @@
 
 
 
-v1: is hand movement trajectories tracking based on countour mass centriods with X-Y trajectorires plot
+v1.py: is hand movement trajectories tracking based on countour mass centriods with X-Y trajectorires plot
