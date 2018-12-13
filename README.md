@@ -11,6 +11,9 @@
 7. Face detection is also performed using HAAR CASCADE Classifiers
 
 
+Just for reference, the code in this repository has been tested on a desktop PC with:
+- Python 3.6.5
+- OpenCV 3.3.1
 
 v1.py: is hand movement trajectories tracking based on countour mass centriods with X vs Y trajectorires plot
 
