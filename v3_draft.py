@@ -3,9 +3,12 @@ import numpy as np
 import time
 import matplotlib.pyplot as plt
 import pandas as pd
-from matplotlib import dates
-import importlib
-importlib.import_module('mpl_toolkits.mplot3d').__path__
+#from matplotlib import dates
+#import importlib
+#importlib.import_module('mpl_toolkits.mplot3d').__path__
+from datetime import datetime
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
 
 from datetime import datetime
  
@@ -121,22 +124,24 @@ def plot_trajectories_vstime(center,str):
     return None
 
 
+
 #Plot 3D trjectories 
 def plot_trajectories_3d(center, str):
     xs = [x[0] for x in center]
     ys = [x[1] for x in center]
     ts = [x[2] for x in center]
     fig = plt.figure()
-    ax = plt.axes(projection='3d')
-    
+    ax = plt.axes(projection='3d')    
     #ax.plot3D(xs, ys, dates.date2num(ts), 'gray')
-    ax.plot3D(xs, ys, ts, 'gray')
+    ax.plot3D(xs, np.arange(0, len(xs)), ys, 'blue')
     ax.set_xlabel('X')
-    ax.set_ylabel('Y')
-    ax.set_zlabel('Time')
+    ax.set_ylabel('Time')
+    ax.set_zlabel('Y')
     ax.set_title(str + '-Trajectory')
+    #Axes3D.text(xs, np.arange(0, len(xs)), ys, '%s', ts, size=20, zorder=1, color='k')
     plt.show()
-    return None
+    return None    
+    
 
 # Loop video capture until break statement is exectured
 while cap.isOpened(): 
