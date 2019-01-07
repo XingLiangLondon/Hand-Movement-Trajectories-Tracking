@@ -1,17 +1,15 @@
 import cv2
 import numpy as np
 import time
+from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
-import pandas as pd
+from datetime import datetime
+
 #from matplotlib import dates
 #import importlib
 #importlib.import_module('mpl_toolkits.mplot3d').__path__
-from datetime import datetime
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 
-from datetime import datetime
- 
+
 # Initialize webcam input
 #cap = cv2.VideoCapture(0)
 
@@ -118,30 +116,33 @@ def plot_trajectories_vstime(center,str):
     plt.xlabel('Time')
     plt.ylabel('X-Y')
     plt.title(str + ' hand trajectories')
-    plt.gca().invert_yaxis()  #Reverse Y-Axis in PyPlot (y reverted for:opencv choose the coordinate system of points/images from Top-Left corner; x reverted for: mirror effect)                   
+    plt.gca().invert_yaxis()  #Reverse Y-Axis in PyPlot (y reverted for:opencv choose the coordinate system of points/images from Top-Left corner; x reverted for: mirror effect)
+    plt.gca().invert_xaxis()
     plt.legend(loc='upper right')
     plt.show()
     return None
 
 
-
 #Plot 3D trjectories 
-def plot_trajectories_3d(center, str):
+def plot_trajectories_3d(center, str, clr):
     xs = [x[0] for x in center]
     ys = [x[1] for x in center]
-    ts = [x[2] for x in center]
+    ts = [x[2] for x in center]  
     fig = plt.figure()
     ax = plt.axes(projection='3d')    
     #ax.plot3D(xs, ys, dates.date2num(ts), 'gray')
-    ax.plot3D(xs, np.arange(0, len(xs)), ys, 'blue')
+    ax.plot3D(xs, np.arange(0, len(xs)), ys, color= clr, marker ='o') 
     ax.set_xlabel('X')
     ax.set_ylabel('Time')
     ax.set_zlabel('Y')
     ax.set_title(str + '-Trajectory')
-    #Axes3D.text(xs, np.arange(0, len(xs)), ys, '%s', ts, size=20, zorder=1, color='k')
+    plt.gca().invert_zaxis()  #Reverse Z-Axis in PyPlot (to revert y)
+    # place text annotations for timestamp  on a 3D plot
+    for x, y, z, label in zip(xs, np.arange(0, len(xs)), ys, ts):
+        ax.text(x, y, z, label)
+   
     plt.show()
-    return None    
-    
+    return None
 
 # Loop video capture until break statement is exectured
 while cap.isOpened(): 
@@ -273,6 +274,8 @@ while cap.isOpened():
                             plot_trajectories(points_right, "Right", "green")
                             plot_trajectories_vstime(points_left,(DATE+" Left"))
                             plot_trajectories_vstime(points_right, (DATE+" Right"))                              
+                            plot_trajectories_3d(points_left,(DATE+" Left"),  "red")
+                            plot_trajectories_3d(points_right,(DATE+" Right"), "green")
                             points_left = []
                             points_right = [] 
                             frame_count = 0
@@ -302,12 +305,12 @@ while cap.isOpened():
                         # If there is no hand detected,  when count frames to FRAME, plot trajectories before clear the trajectories trails
                         if frame_count == FRAME:
                             print("frame_count",frame_count)
-                            #plot_trajectories(points_left, "Left", "red")
-                            #plot_trajectories(points_right, "Right", "green")
-                            #plot_trajectories_vstime(points_left,(DATE+" Left"))
-                            #plot_trajectories_vstime(points_right, (DATE+" Right"))  
-                            plot_trajectories_3d(points_left,(DATE+" Left"))
-                            plot_trajectories_3d(points_right,(DATE+" Right"))
+                            plot_trajectories(points_left, "Left", "red")
+                            plot_trajectories(points_right, "Right", "green")
+                            plot_trajectories_vstime(points_left,(DATE+" Left"))
+                            plot_trajectories_vstime(points_right, (DATE+" Right"))  
+                            plot_trajectories_3d(points_left,(DATE+" Left"),  "red")
+                            plot_trajectories_3d(points_right,(DATE+" Right"), "green")
                             points_left = []
                             points_right = [] 
                             frame_count = 0                      
@@ -317,28 +320,28 @@ while cap.isOpened():
 
 
         # Display our object tracker
-        #frame = cv2.flip(frame, 1)
+        frame = cv2.flip(frame, 1)
         cv2.imshow("Object Tracker", frame)
        
 
 
         if cv2.waitKey(1) == 13: #13 is the Enter Key
-            #plot_trajectories(points_left, "Left", "red")
-            #plot_trajectories(points_right, "Right", "green")
-            #plot_trajectories_vstime(points_left, (DATE+" Left"))
-            #plot_trajectories_vstime(points_right, (DATE+" Right"))
-            plot_trajectories_3d(points_left,(DATE+" Left"))
-            plot_trajectories_3d(points_right,(DATE+" Right"))
+            plot_trajectories(points_left, "Left", "red")
+            plot_trajectories(points_right, "Right", "green")
+            plot_trajectories_vstime(points_left, (DATE+" Left"))
+            plot_trajectories_vstime(points_right, (DATE+" Right"))
+            plot_trajectories_3d(points_left,(DATE+" Left"),"red")
+            plot_trajectories_3d(points_right,(DATE+" Right"),"green")
             break
 
     else:
         if cv2.waitKey(1) == 13: #13 is the Enter Key
-            #plot_trajectories(points_left, "Left", "red")
-            #plot_trajectories(points_right, "Right", "green")
-            #plot_trajectories_vstime(points_left, (DATE+" Left"))
-            #plot_trajectories_vstime(points_right, (DATE+" Right"))
-            plot_trajectories_3d(points_left,(DATE+" Left"))
-            plot_trajectories_3d(points_right,(DATE+" Right"))
+            plot_trajectories(points_left, "Left", "red")
+            plot_trajectories(points_right, "Right", "green")
+            plot_trajectories_vstime(points_left, (DATE+" Left"))
+            plot_trajectories_vstime(points_right, (DATE+" Right"))
+            plot_trajectories_3d(points_left,(DATE+" Left"), "red")
+            plot_trajectories_3d(points_right,(DATE+" Right"),"green" )
             break
 
 cap.release()
