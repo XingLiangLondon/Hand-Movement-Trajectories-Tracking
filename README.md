@@ -17,4 +17,6 @@ Just for reference, the code in this repository has been tested on a desktop PC 
 
 v1.py: is hand movement trajectories tracking based on countour mass centriods with X vs Y trajectorires plot
 
-v2.py: is hand movement trajectories tracking based on countour mass centriods with X, Y, vs time trajectorires plot
+v2.py: is hand movement trajectories tracking based on countour mass centriods with X, Y, vs time 2D trajectorires plot
+
+v3.py: is hand movement trajectories tracking based on countour mass centriods with X, Y, vs time 3D trajectorires plot
