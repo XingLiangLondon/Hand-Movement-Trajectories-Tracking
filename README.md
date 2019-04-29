@@ -20,3 +20,5 @@ v1.py: is hand movement trajectories tracking based on countour mass centriods w
 v2.py: is hand movement trajectories tracking based on countour mass centriods with X, Y, vs time 2D trajectorires plot
 
 v3.py: is hand movement trajectories tracking based on countour mass centriods with X, Y, vs time 3D trajectorires plot
+
+v4.py: multiple colour space filtering models with multi-colour thresholds (HSV/YCrCb/Lab/XYZ) for skin segmentation are considered. Also a rectangular box is drawn around the face (previously detected.
