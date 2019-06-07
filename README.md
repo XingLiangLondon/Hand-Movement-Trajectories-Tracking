@@ -24,6 +24,7 @@ v3.py: is hand movement trajectories tracking based on countour mass centriods w
 
 v4.py: multiple colour space filtering models with multi-colour thresholds (HSV/YCrCb/Lab/XYZ) for skin segmentation are considered. Also a rectangular box is drawn around the face (previously detected).
 ## Citations
+'''
 @inproceedings{liang2019handtracking,
   author = {X. Liang, E. Kapetanios, B. Woll and A. Angelopoulou},
   booktitle = {CD-MAKE},
@@ -31,3 +32,4 @@ v4.py: multiple colour space filtering models with multi-colour thresholds (HSV/
 Dementia Screening in Ageing Deaf Signers of British Sign Language},
   year = {2019}
 }
+'''
