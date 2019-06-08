@@ -2,7 +2,7 @@
 ## Methodology
 1. Convert video frame from RBG/BGR to HSV 
 2. Apply skin detection by lower & upper thresh of skin color filtering
-3. Apply morphology operations to reduce noise
+3. Apply morphology operations to et rid of the noisy specks.
 4. Apply KNN background subtraction to refine skin filtering result, i.e. to further remove static skin coulor related background (face will be fading out, if it does not move)/ or a rectangular box is drawn around the face previously detected
 5. Find contours of both hands by
    - Firstly sorting contours by area  (get the largest two contours i.e. get two hands out)
