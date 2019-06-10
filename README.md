@@ -15,7 +15,7 @@
 ## Result
 [![Watch the video](https://s.ytimg.com/yts/img/favicon_144-vfliLAfaB.png)](https://www.youtube.com/watch?v=nwIRszst49Y)
 <video width="320" height="240" controls>
-     <source src="video.mov" type="video/mp4">
+     <source src="bandicam 2019-01-29 09-52-04-949.avi" type="Image/">
 </video>
 
 ## Version Notes
