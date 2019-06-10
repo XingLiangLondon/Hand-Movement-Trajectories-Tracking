@@ -12,6 +12,8 @@
 7. Face detection is also performed using HAAR CASCADE Classifiers
 
 ![](Image/Figure%201.PNG)
+## Result
+![](Image/bandicam%202019-01-29%2009-52-04-949.avi)
 
 ## Version Notes
 **v1.py** is hand movement trajectories tracking based on countour mass centriods with X vs Y trajectorires plot
