@@ -11,7 +11,7 @@
 6. Tracking hand movement trajectories based on contour mass centroid 
 7. Face detection is also performed using HAAR CASCADE Classifiers
 
-
+![](Image/Figure%201.PNG)
 For the reference, the code in this repository has been tested on a desktop PC with:
 * Python 3.6.5
 * OpenCV 3.3.1
