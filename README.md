@@ -12,9 +12,7 @@
 7. Face detection is also performed using HAAR CASCADE Classifiers
 
 ![](Image/Figure%201.PNG)
-For the reference, the code in this repository has been tested on a desktop PC with:
-* Python 3.6.5
-* OpenCV 3.3.1
+
 ## Version Notes
 **v1.py** is hand movement trajectories tracking based on countour mass centriods with X vs Y trajectorires plot
 
@@ -23,6 +21,10 @@ For the reference, the code in this repository has been tested on a desktop PC w
 **v3.py** is hand movement trajectories tracking based on countour mass centriods with X, Y, vs time 3D trajectorires plot
 
 **v4.py** multiple colour space filtering models with multi-colour thresholds (HSV/YCrCb/Lab/XYZ) for skin segmentation are considered. Also a rectangular box is drawn around the face (previously detected).
+
+For the reference, the code in this repository has been tested on a desktop PC with:
+* Python 3.6.5
+* OpenCV 3.3.1
 ## Citations
 ```
 @inproceedings{liang2019handtracking,
