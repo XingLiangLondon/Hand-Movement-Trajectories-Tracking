@@ -45,7 +45,8 @@ For the reference, the code in this repository has been tested on a desktop PC w
 ```
 @inproceedings{liang2019handtracking,
   author = {X. Liang, E. Kapetanios, B. Woll and A. Angelopoulou},
-  booktitle = {CD-MAKE},
+  booktitle = {Cross Domain Conference for Machine
+Learning and Knowledge Extraction (CD-MAKE2019)},
   title = {Real Time Hand Movement Trajectory Tracking for Enhancing
 Dementia Screening in Ageing Deaf Signers of British Sign Language},
   year = {2019}
