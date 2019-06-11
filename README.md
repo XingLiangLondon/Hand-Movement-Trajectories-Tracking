@@ -14,10 +14,10 @@
 ![](Image/Figure%201.PNG)
 ## Results
 [![Watch the video](https://img.youtube.com/vi/nwIRszst49Y/sddefault.jpg)](https://www.youtube.com/watch?v=nwIRszst49Y&feature=youtu.be&t=2)
-![](Image/Figure5left.PNG)
+![](Image/Figure5left.PNG= 250x250)
 ![](Image/Figure5right.PNG)
 ![](Image/Figure6left.PNG)
-![](Image/Figure6lright.PNG)
+![](Image/Figure6right.PNG)
 
 ## Version Notes
 **v1.py** is hand movement trajectories tracking based on countour mass centriods with X vs Y trajectorires plot
