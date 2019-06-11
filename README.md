@@ -12,7 +12,7 @@
 7. Face detection is also performed using HAAR CASCADE Classifiers
 
 <p align="center">
-<img src="Image/Figure%201.PNG" width="800">
+<img src="Image/Figure%201.PNG" width="600">
 </p>
 
 ## Results
@@ -24,6 +24,8 @@
 
 <p align="center">
 <img src="Image/Figure5left.PNG" width="250"><img src="Image/Figure5right.PNG" width="250">
+</p>  
+<p align="center">
 <img src="Image/Figure6left.PNG" width="250"><img src="Image/Figure6right.PNG" width="250">
 </p>
 
