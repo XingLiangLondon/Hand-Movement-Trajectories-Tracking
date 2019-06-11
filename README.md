@@ -13,9 +13,7 @@
 
 ![](Image/Figure%201.PNG)
 ## Result
-[![Watch the video](https://img.youtube.com/vi/nwIRszst49Y/hqdefault.jpg)](https://www.youtube.com/watch?v=nwIRszst49Y&feature=youtu.be&t=2)
-
-https://youtu.be/nwIRszst49Y?t=2
+[![Watch the video](https://img.youtube.com/vi/nwIRszst49Y/sddefault.jpg)](https://www.youtube.com/watch?v=nwIRszst49Y&feature=youtu.be&t=2)
 
 
 ## Version Notes
