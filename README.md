@@ -14,7 +14,9 @@
 ![](Image/Figure%201.PNG)
 ## Results
 [![Watch the video](https://img.youtube.com/vi/nwIRszst49Y/sddefault.jpg)](https://www.youtube.com/watch?v=nwIRszst49Y&feature=youtu.be&t=2)
-![](Image/Figure5left.PNG= 250x250)
+
+<img src="Image/Figure5left.PNG" width="100">
+![](Image/Figure5left.PNG)
 ![](Image/Figure5right.PNG)
 ![](Image/Figure6left.PNG)
 ![](Image/Figure6right.PNG)
