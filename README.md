@@ -15,11 +15,9 @@
 ## Results
 [![Watch the video](https://img.youtube.com/vi/nwIRszst49Y/sddefault.jpg)](https://www.youtube.com/watch?v=nwIRszst49Y&feature=youtu.be&t=2)
 
-<img src="Image/Figure5left.PNG" width="100">
-![](Image/Figure5left.PNG)
-![](Image/Figure5right.PNG)
-![](Image/Figure6left.PNG)
-![](Image/Figure6right.PNG)
+<img src="Image/Figure5left.PNG" width="300"><img src="Image/Figure5right.PNG" width="300">
+<img src="Image/Figure6left.PNG" width="300"><img src="Image/Figure6right.PNG" width="300">
+
 
 ## Version Notes
 **v1.py** is hand movement trajectories tracking based on countour mass centriods with X vs Y trajectorires plot
