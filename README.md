@@ -10,10 +10,10 @@
    - Draw Convex Hull contour and normal contour
 6. Tracking hand movement trajectories based on contour mass centroid 
 7. Face detection is also performed using HAAR CASCADE Classifiers
+<img src="Image/Figure%201.PNG" width="600">
 
-![](Image/Figure%201.PNG)
 ## Results
-[![Watch the video](https://img.youtube.com/vi/nwIRszst49Y/sddefault.jpg)](https://www.youtube.com/watch?v=nwIRszst49Y&feature=youtu.be&t=2)
+[![Watch the video](https://img.youtube.com/vi/nwIRszst49Y/hqdefault.jpg)](https://www.youtube.com/watch?v=nwIRszst49Y&feature=youtu.be&t=2)
 
 <img src="Image/Figure5left.PNG" width="300"><img src="Image/Figure5right.PNG" width="300">
 <img src="Image/Figure6left.PNG" width="300"><img src="Image/Figure6right.PNG" width="300">
