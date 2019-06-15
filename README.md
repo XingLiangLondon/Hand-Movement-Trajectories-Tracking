@@ -1,4 +1,4 @@
-# Hand Movement Trajectories Tracking
+# Hand Movement Trajectories Tracking (Based on Colour Segmentation)
 ## Methodology
 1. Convert video frame from RBG/BGR to HSV 
 2. Apply skin detection by lower & upper thresh of skin color filtering
