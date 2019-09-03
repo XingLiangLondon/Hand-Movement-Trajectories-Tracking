@@ -16,18 +16,19 @@
 </p>
 
 ## Results
-
-
 <div align="center">
   <a href="https://www.youtube.com/watch?v=nwIRszst49Y&feature=youtu.be&t=2"><img src="https://img.youtube.com/vi/nwIRszst49Y/hqdefault.jpg" alt="IMAGE ALT TEXT"></a>
 </div>
-
 <p align="center">
 <img src="Image/Figure5left.PNG" width="250"><img src="Image/Figure5right.PNG" width="250">
 </p>  
 <p align="center">
 <img src="Image/Figure6left.PNG" width="250"><img src="Image/Figure6right.PNG" width="250">
 </p>
+
+<p align="center">
+<img src="Image/Figure6left2D.png" width="250"><img src="Image/Figure6right2D.png" width="250">
+</p>  
 
 ## Version Notes
 **v1.py** is hand movement trajectories tracking based on countour mass centriods with X vs Y trajectorires plot
